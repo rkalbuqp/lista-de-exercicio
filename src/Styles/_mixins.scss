@@ -1,0 +1,86 @@
+@import "./variables";
+
+@mixin componentes-fixos {
+    background-color: $primaryColor;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
+@mixin header {
+    display: grid;
+    grid-template-columns: 115px 1fr; /* Coluna fixa para o sidebar e coluna flexível para o conteúdo */
+    grid-template-rows: 5rem 1fr; /* Linha para o cabeçalho e linha flexível para o conteúdo */
+    grid-template-areas:
+        "sidebar content"
+        "sidebar content";
+    gap: 1rem;
+    padding-top: 5rem; /* Espaço para o cabeçalho fixo */
+    height: 100vh; /* Altura da viewport */
+    margin: 0;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da altura total */
+}
+    
+@mixin sidebar {
+    background-color: #666; /* Cor da barra lateral */
+    color: #fff; /* Cor do texto da barra lateral */
+    padding: 1rem;
+    height: calc(100vh - 5rem); /* Altura da barra lateral (total da viewport menos altura do cabeçalho) */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo exceder a altura */
+    grid-area: sidebar; /* Define a área da grid para a barra lateral */
+
+    a {
+        color: inherit; // Mantém a cor do link igual ao texto padrão
+        text-decoration: none; // Remove o sublinhado do link
+
+        &:hover {
+            text-decoration: underline; // Adiciona sublinhado ao passar o mouse, se desejado
+        }
+    }
+}
+
+@mixin content {
+    background-color: $bg-color;
+    margin-left: 120px;
+    margin-top: 4rem;
+}
+
+
+@mixin article {
+    background-color: $bg-color;
+    margin-left: 120px;
+    margin-top: 50px;
+    border: 1px;
+    border-color: $secondaryColor;
+    text-align: justify;
+
+}
+
+@mixin title {
+    background-color: $bg-color-title;
+    color: $txt-color;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+
+@mixin cabeçalho {
+background-color: $primaryColor;
+color: $txt-color;
+text-align: ceter;
+font-size: 3rem;
+font-family: Verdana, sans-serif;
+}
+
+@mixin parágrafo {
+background-color: $primaryColor;
+color: yellow;
+font-size: smaller;
+text-align: left;
+padding: 2px;
+margin: 2px;
+}

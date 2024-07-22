@@ -1,0 +1,63 @@
+@import "./variables";
+@import "./mixins";
+@import "./functions";
+@import "./reset";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: $bg-color;
+    height: 100%;
+}
+
+.header {
+    @include componentes-fixos;
+    top: 0;
+    border: 2px;
+    z-index: 1000;
+
+}
+
+.footer {
+    @include componentes-fixos;
+    bottom: 0;
+    border: 3px;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: calc(100% - 6rem);
+}
+
+.main-content {
+    .sidebar {
+        .nav-list {
+            @include sidebar;
+        }
+    }
+}
+
+.content {
+   .article1, .article2, .article3 {
+    @include article
+   }
+}
+
+.title1, .title2, .title3 {
+    @include title
+   }
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+.cabeçalho {
+    @include cabeçalho;
+}
+
+.parágrafo {
+    @include parágrafo;
+}
