@@ -4,10 +4,10 @@
 
 Crie um layout de página completa usando Flexbox. A página deve ter:
 
-- [ ] Cabeçalho fixo.
-- [ ] Barra lateral fixa à esquerda com altura de 100%.
-- [ ] Seção de conteúdo principal com scroll.
-- [ ] Rodapé fixo.
+- [x] Cabeçalho fixo.
+- [x] Barra lateral fixa à esquerda com altura de 100%.
+- [x] Seção de conteúdo principal com scroll.
+- [x] Rodapé fixo.
 
 ---
 
