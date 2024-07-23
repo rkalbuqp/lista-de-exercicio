@@ -33,3 +33,36 @@
     height: 100%;
     top: 40px;
 }
+
+
+@mixin clicaveis {
+    color: $txt-color-fixos;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.5em 1em;
+    background-color: $primaryColor;
+    text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.5);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px #333;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+}
+
+@mixin navegacao {
+    background-color: inherit;
+    color: rgb(238, 66, 172);
+    text-align: center;
+}
+
+@mixin title-style {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    color: $txt-color-fixos;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.5em 1em;
+    background-color: $primaryColor;
+    text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.5);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px #333;
+}

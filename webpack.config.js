@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     // Usa index.html como arquivo de inicio e faz bundle com suas dependências
