@@ -15,8 +15,8 @@ Crie um layout de página completa usando Flexbox. A página deve ter:
 
 Desenvolva uma galeria de imagens que se reorganiza conforme o tamanho da tela usando CSS Grid.
 
-- [ ] Uso de `grid-template-columns` com `repeat` e `minmax`.
-- [ ] Ajuste dinâmico do número de colunas com media queries.
+- [x] Uso de `grid-template-columns` com `repeat` e `minmax`.
+- [x] Ajuste dinâmico do número de colunas com media queries.
 
 ---
 

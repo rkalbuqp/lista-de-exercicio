@@ -12,8 +12,8 @@ module.exports = {
   plugins: [
     // Usa index.html como arquivo de inicio e faz bundle com suas dependências
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./src/index.html",
+      filename: 'index.html',
+      template: './src/index.html',
     }),
 
     // Minifica o arquivo styles.css

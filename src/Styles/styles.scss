@@ -44,6 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 60px; /* Altura do header fixo */
+    height: calc(100% - 60px);
 }
 
 /* Conteúdo principal com a sidebar à esquerda */
@@ -107,6 +108,54 @@ main {
     color: $primaryColor;
     
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  
+    // Para telas pequenas
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  
+    // Para telas médias
+    @media (min-width: 601px) and (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    // Para telas grandes
+    @media (min-width: 901px) and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    // Para telas extra grandes
+    @media (min-width: 1201px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .box {
+    @include box;
+    
+    h3 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+    
+    p {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+  
+  
+  .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8 { 
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   }
+  
 
 /* Footer fixo na parte inferior */
 .footer {
