@@ -2,7 +2,8 @@
 
 @mixin body {
     font-family: Arial, sans-serif;
-    background-color: $bg-color;
+    background: rgb(120,99,119);
+    background: linear-gradient(0deg, rgba(120,99,119,1) 0%, rgba(73,63,73,1) 41%, rgba(29,29,29,1) 80%);
     line-height: 1.6;
     display: flex;
     flex-direction: row;
@@ -68,8 +69,9 @@
     text-decoration: none;
     padding: 0.5px;
     display: block;
-    background-color: rgb(10, 144, 161);
-    border-radius: 5px;
+    background: rgb(2,0,36);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.80015756302521) 5%, rgba(242,130,231,0.5900735294117647) 86%);
     text-align: left;
 }
 
@@ -104,7 +106,7 @@
     text-shadow: 2px 2px 2px $txt-color;
     text-decoration: underline;
     text-decoration-color: #e7e5e5;
-    margin: 1px 1px 600px 1px;
+    margin: 1px 1px 50px 1px;
 }
 
 @mixin name {
@@ -169,3 +171,42 @@
     }
 }
 
+
+@mixin image {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    z-index: 1;
+    margin: 1px 1px 500px 1px;
+}
+
+@mixin image-overlay {
+    position: absolute;
+    margin: 1px 1px 500px 1px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+@mixin title-click {
+    color: $txt-color-fixos;
+    text-decoration: none;
+    margin: 2rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.5em 1em;
+    background: rgb(2,0,36);
+    background: $primaryColor;
+    text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.5);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 2px #333;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    
+}

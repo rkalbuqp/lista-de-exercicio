@@ -10,6 +10,7 @@ body {
     @include body;
 }
 
+
 /* Header fixo no topo */
 .header {
     @include header;
@@ -61,8 +62,8 @@ body {
         @include sidebarA;
     }
     a:hover {
-        background-color: rgb(15, 194, 211);
-    }
+        background: rgb(2,0,36);
+        background: linear-gradient(128deg, rgba(2,0,36,0.80015756302521) 5%, rgba(242,130,231,1) 86%);    }
 }
 
 .titulo-indice{
@@ -92,6 +93,7 @@ main {
     flex: 1;
     margin-left: 210px; /* Largura da sidebar + margem */
     padding: 10px;
+    background-image: url(../assets/foto1.png);
 }
 
 .title-style {
@@ -136,3 +138,15 @@ main {
 .footer {
     @include footer;
 }
+
+.image {
+    @include image;
+  }
+  
+.image-overlay {
+    @include image-overlay;
+  }
+
+  .title-click {
+    @include title-click;
+  }
