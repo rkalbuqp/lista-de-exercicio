@@ -198,15 +198,21 @@
 
 @mixin title-click {
     color: $txt-color-fixos;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-line: 400px;
     margin: 2rem 0.1rem 0.1rem 0.1rem;
     padding: 0.5em 1em;
-    background: rgb(2,0,36);
-    background: $primaryColor;
     text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.5);
-    border-radius: 0.5em;
-    box-shadow: 2px 2px 2px #333;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     
+}
+
+@mixin capitulos {
+    background-color: inherit;
+    color: #ccc;
+    text-decoration: none;
+    margin: 2px 2px 300px 2px;
+    display: grid;
+    grid-template-rows: minmax();
 }

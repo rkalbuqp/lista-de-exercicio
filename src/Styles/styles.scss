@@ -26,6 +26,10 @@ body {
     }
 }
 
+.capitulo {
+    @include capitulos;
+}
+
 
 
 .nav-item-cabecalho {
@@ -150,3 +154,5 @@ main {
   .title-click {
     @include title-click;
   }
+
+ 
